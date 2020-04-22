@@ -15,6 +15,7 @@
 		46C31593244F729500AD5365 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C31591244F729500AD5365 /* LaunchScreen.storyboard */; };
 		46C3159E244F729600AD5365 /* OnlineShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C3159D244F729600AD5365 /* OnlineShopTests.swift */; };
 		46C315AC245055C300AD5365 /* ProductInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C315AB245055C300AD5365 /* ProductInput.swift */; };
+		46C315AE2450704900AD5365 /* ProductType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C315AD2450704900AD5365 /* ProductType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		46C3159D244F729600AD5365 /* OnlineShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopTests.swift; sourceTree = "<group>"; };
 		46C3159F244F729600AD5365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46C315AB245055C300AD5365 /* ProductInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInput.swift; sourceTree = "<group>"; };
+		46C315AD2450704900AD5365 /* ProductType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				46C315AB245055C300AD5365 /* ProductInput.swift */,
+				46C315AD2450704900AD5365 /* ProductType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C315AE2450704900AD5365 /* ProductType.swift in Sources */,
 				46C3158B244F729100AD5365 /* ViewController.swift in Sources */,
 				46C31587244F729100AD5365 /* AppDelegate.swift in Sources */,
 				46C315AC245055C300AD5365 /* ProductInput.swift in Sources */,

@@ -18,10 +18,10 @@ struct ProductInput {
     //MARK: Public functions
     
     func isValidLabel() -> Bool {
-        guard let label = productLabel else {
+        guard ProductType(label: productLabel) != nil else {
             return false
         }
         
-        return !label.isEmpty
+        return true
     }
 }

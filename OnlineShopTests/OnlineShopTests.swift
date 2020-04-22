@@ -20,7 +20,7 @@ class OnlineShopTests: XCTestCase {
     }
     
     func testIfProductLabelIsAvailable() {
-        let input = ProductInput(productLabel: "Laptop")
+        let input = ProductInput(productLabel: "MOBILE")
         XCTAssertTrue(input.isValidLabel(), "Please fill all product/product count")
     }
 
