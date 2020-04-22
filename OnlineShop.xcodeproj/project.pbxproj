@@ -14,6 +14,7 @@
 		46C31590244F729500AD5365 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46C3158F244F729500AD5365 /* Assets.xcassets */; };
 		46C31593244F729500AD5365 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C31591244F729500AD5365 /* LaunchScreen.storyboard */; };
 		46C3159E244F729600AD5365 /* OnlineShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C3159D244F729600AD5365 /* OnlineShopTests.swift */; };
+		46C315AC245055C300AD5365 /* ProductInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C315AB245055C300AD5365 /* ProductInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		46C31599244F729600AD5365 /* OnlineShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C3159D244F729600AD5365 /* OnlineShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopTests.swift; sourceTree = "<group>"; };
 		46C3159F244F729600AD5365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46C315AB245055C300AD5365 /* ProductInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		46C31585244F729100AD5365 /* OnlineShop */ = {
 			isa = PBXGroup;
 			children = (
+				46C315A82450559500AD5365 /* Modules */,
 				46C31586244F729100AD5365 /* AppDelegate.swift */,
 				46C31588244F729100AD5365 /* SceneDelegate.swift */,
 				46C3158A244F729100AD5365 /* ViewController.swift */,
@@ -97,6 +100,30 @@
 				46C3159F244F729600AD5365 /* Info.plist */,
 			);
 			path = OnlineShopTests;
+			sourceTree = "<group>";
+		};
+		46C315A82450559500AD5365 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				46C315A9245055A200AD5365 /* AddToCart */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		46C315A9245055A200AD5365 /* AddToCart */ = {
+			isa = PBXGroup;
+			children = (
+				46C315AA245055AB00AD5365 /* Model */,
+			);
+			path = AddToCart;
+			sourceTree = "<group>";
+		};
+		46C315AA245055AB00AD5365 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				46C315AB245055C300AD5365 /* ProductInput.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +229,7 @@
 			files = (
 				46C3158B244F729100AD5365 /* ViewController.swift in Sources */,
 				46C31587244F729100AD5365 /* AppDelegate.swift in Sources */,
+				46C315AC245055C300AD5365 /* ProductInput.swift in Sources */,
 				46C31589244F729100AD5365 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
