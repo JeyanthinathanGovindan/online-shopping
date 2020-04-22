@@ -14,6 +14,7 @@ struct ProductInput {
     
     let productLabel: String?
     let productCount: Int?
+    let productPrice: Double?
     
     
     //MARK: Public functions
@@ -32,5 +33,13 @@ struct ProductInput {
         }
         
         return !(countValue == 0)
+    }
+    
+    func isValidPrice() -> Bool {
+        guard let priceValue = productPrice else {
+            return false
+        }
+        
+        return !(priceValue == 0.0)
     }
 }
