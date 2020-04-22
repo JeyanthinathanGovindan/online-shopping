@@ -18,6 +18,7 @@
 		46C315AE2450704900AD5365 /* ProductType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C315AD2450704900AD5365 /* ProductType.swift */; };
 		46C315B02450728800AD5365 /* ProductInputTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C315AF2450728800AD5365 /* ProductInputTest.swift */; };
 		46C315B22450748900AD5365 /* StateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C315B12450748900AD5365 /* StateModel.swift */; };
+		46C315B4245075FE00AD5365 /* StateModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C315B3245075FE00AD5365 /* StateModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		46C315AD2450704900AD5365 /* ProductType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductType.swift; sourceTree = "<group>"; };
 		46C315AF2450728800AD5365 /* ProductInputTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInputTest.swift; sourceTree = "<group>"; };
 		46C315B12450748900AD5365 /* StateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateModel.swift; sourceTree = "<group>"; };
+		46C315B3245075FE00AD5365 /* StateModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		46C3159C244F729600AD5365 /* OnlineShopTests */ = {
 			isa = PBXGroup;
 			children = (
+				46C315B3245075FE00AD5365 /* StateModelTest.swift */,
 				46C315AF2450728800AD5365 /* ProductInputTest.swift */,
 				46C3159D244F729600AD5365 /* OnlineShopTests.swift */,
 				46C3159F244F729600AD5365 /* Info.plist */,
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46C315B02450728800AD5365 /* ProductInputTest.swift in Sources */,
+				46C315B4245075FE00AD5365 /* StateModelTest.swift in Sources */,
 				46C3159E244F729600AD5365 /* OnlineShopTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,12 +8,29 @@
 
 import Foundation
 
-enum State: String {
+enum State: String, CaseIterable {
     case ut
     case nv
     case tx
     case al
     case ca
+    
+    //MARK: Properties
+    
+    var taxRate: Double? {
+        switch self {
+        case .ut:
+            return 6.85
+        case .nv:
+            return 8.00
+        case .tx:
+            return 6.25
+        case .al:
+            return 4.00
+        case .ca:
+            return 8.25
+        }
+    }
     
     //MARK: Initialisers
     
