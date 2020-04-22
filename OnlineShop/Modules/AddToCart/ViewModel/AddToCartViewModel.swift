@@ -14,6 +14,17 @@ struct AddToCartViewModel {
     
     let input: ProductInput
     
+    
+    //MARK: Public functions
+    
+    func calculateFinalPrice() -> Double? {
+        guard let totalPrice = input.totalPrice,
+            let tax = calculateTaxAmount(),
+            let discount = calculateDiscountAmount() else {
+                return nil
+        }
+        return totalPrice + tax - discount
+    }
 }
 
 extension AddToCartViewModel: TaxCalculator {

@@ -18,7 +18,7 @@ class AddToCartViewModelTest: XCTestCase {
                                  state: "UT")
         let viewModel = AddToCartViewModel(input: input)
         let tax = viewModel.calculateTaxAmount()
-        print("Tax calculated is \(String(describing: tax))")
+        print("Tax calculated is \(tax ?? 0.0)")
         XCTAssertNotNil(tax, "Tax cannot be deduced")
     }
     
@@ -28,9 +28,19 @@ class AddToCartViewModelTest: XCTestCase {
                                  productPrice: 6000,
                                  state: "UT")
         let viewModel = AddToCartViewModel(input: input)
-        
         let discount = viewModel.calculateDiscountAmount()
-        print("Discount is \(String(describing: discount))")
+        print("Discount is \(discount ?? 0.0)")
         XCTAssertFalse(discount == 0, "Discount not applicable")
+    }
+    
+    func testFinalPriceCalculation() {
+        let input = ProductInput(productLabel: "MOBILE",
+                                 productCount: 3,
+                                 productPrice: 6000,
+                                 state: "UT")
+        let viewModel = AddToCartViewModel(input: input)
+        let finalPrice = viewModel.calculateFinalPrice()
+        print("Final Cart Price is \(finalPrice ?? 0.0)")
+        XCTAssertNotNil(finalPrice, "Final price cannot be deduced")
     }
 }
