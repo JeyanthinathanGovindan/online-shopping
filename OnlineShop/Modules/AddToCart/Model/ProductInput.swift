@@ -45,10 +45,10 @@ struct ProductInput {
     }
     
     func isValidState() -> Bool {
-        guard let stateValue = state else {
+        guard State(stateInput: state) != nil else {
             return false
         }
         
-        return !stateValue.isEmpty
+        return true
     }
 }

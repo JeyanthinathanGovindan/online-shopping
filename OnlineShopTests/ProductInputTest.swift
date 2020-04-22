@@ -15,7 +15,7 @@ class ProductInputTest: XCTestCase {
         let input = ProductInput(productLabel: "MOBILE",
                                  productCount: 1,
                                  productPrice: 100,
-                                 state: "TN")
+                                 state: "UT")
         XCTAssertTrue(input.isValidLabel(), "Please fill all product/product count")
         XCTAssertTrue(input.isValidCount(), "Please fill all product/product count")
         XCTAssertTrue(input.isValidPrice(), "Please fill all price or invalid price")
