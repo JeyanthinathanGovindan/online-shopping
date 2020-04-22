@@ -21,6 +21,7 @@
 		46C315B924509B1100AD5365 /* AddToCartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C315B824509B1100AD5365 /* AddToCartViewModel.swift */; };
 		46C315BD24509B4900AD5365 /* AddToCartViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C315BC24509B4900AD5365 /* AddToCartViewModelTest.swift */; };
 		46C315BF24509D7300AD5365 /* TaxCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C315BE24509D7300AD5365 /* TaxCalculator.swift */; };
+		46C315C12450A15500AD5365 /* DiscountCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C315C02450A15500AD5365 /* DiscountCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		46C315B824509B1100AD5365 /* AddToCartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartViewModel.swift; sourceTree = "<group>"; };
 		46C315BC24509B4900AD5365 /* AddToCartViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartViewModelTest.swift; sourceTree = "<group>"; };
 		46C315BE24509D7300AD5365 /* TaxCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxCalculator.swift; sourceTree = "<group>"; };
+		46C315C02450A15500AD5365 /* DiscountCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			children = (
 				46C315B824509B1100AD5365 /* AddToCartViewModel.swift */,
 				46C315BE24509D7300AD5365 /* TaxCalculator.swift */,
+				46C315C02450A15500AD5365 /* DiscountCalculator.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C315C12450A15500AD5365 /* DiscountCalculator.swift in Sources */,
 				46C315B924509B1100AD5365 /* AddToCartViewModel.swift in Sources */,
 				46C315AE2450704900AD5365 /* ProductType.swift in Sources */,
 				46C315B22450748900AD5365 /* StateModel.swift in Sources */,
