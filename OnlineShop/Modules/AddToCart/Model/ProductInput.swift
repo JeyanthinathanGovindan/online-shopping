@@ -13,6 +13,7 @@ struct ProductInput {
     //MARK: Properties
     
     let productLabel: String?
+    let productCount: Int?
     
     
     //MARK: Public functions
@@ -23,5 +24,13 @@ struct ProductInput {
         }
         
         return true
+    }
+    
+    func isValidCount() -> Bool {
+        guard let countValue = productCount else {
+            return false
+        }
+        
+        return !(countValue == 0)
     }
 }
