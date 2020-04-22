@@ -13,12 +13,14 @@
 		46C3158E244F729100AD5365 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C3158C244F729100AD5365 /* Main.storyboard */; };
 		46C31590244F729500AD5365 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46C3158F244F729500AD5365 /* Assets.xcassets */; };
 		46C31593244F729500AD5365 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C31591244F729500AD5365 /* LaunchScreen.storyboard */; };
-		46C3159E244F729600AD5365 /* OnlineShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C3159D244F729600AD5365 /* OnlineShopTests.swift */; };
 		46C315AC245055C300AD5365 /* ProductInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C315AB245055C300AD5365 /* ProductInput.swift */; };
 		46C315AE2450704900AD5365 /* ProductType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C315AD2450704900AD5365 /* ProductType.swift */; };
 		46C315B02450728800AD5365 /* ProductInputTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C315AF2450728800AD5365 /* ProductInputTest.swift */; };
 		46C315B22450748900AD5365 /* StateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C315B12450748900AD5365 /* StateModel.swift */; };
 		46C315B4245075FE00AD5365 /* StateModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C315B3245075FE00AD5365 /* StateModelTest.swift */; };
+		46C315B924509B1100AD5365 /* AddToCartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C315B824509B1100AD5365 /* AddToCartViewModel.swift */; };
+		46C315BD24509B4900AD5365 /* AddToCartViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C315BC24509B4900AD5365 /* AddToCartViewModelTest.swift */; };
+		46C315BF24509D7300AD5365 /* TaxCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C315BE24509D7300AD5365 /* TaxCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,13 +43,15 @@
 		46C31592244F729500AD5365 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46C31594244F729500AD5365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46C31599244F729600AD5365 /* OnlineShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		46C3159D244F729600AD5365 /* OnlineShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopTests.swift; sourceTree = "<group>"; };
 		46C3159F244F729600AD5365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46C315AB245055C300AD5365 /* ProductInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInput.swift; sourceTree = "<group>"; };
 		46C315AD2450704900AD5365 /* ProductType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductType.swift; sourceTree = "<group>"; };
 		46C315AF2450728800AD5365 /* ProductInputTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInputTest.swift; sourceTree = "<group>"; };
 		46C315B12450748900AD5365 /* StateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateModel.swift; sourceTree = "<group>"; };
 		46C315B3245075FE00AD5365 /* StateModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateModelTest.swift; sourceTree = "<group>"; };
+		46C315B824509B1100AD5365 /* AddToCartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartViewModel.swift; sourceTree = "<group>"; };
+		46C315BC24509B4900AD5365 /* AddToCartViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartViewModelTest.swift; sourceTree = "<group>"; };
+		46C315BE24509D7300AD5365 /* TaxCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +110,8 @@
 			children = (
 				46C315B3245075FE00AD5365 /* StateModelTest.swift */,
 				46C315AF2450728800AD5365 /* ProductInputTest.swift */,
-				46C3159D244F729600AD5365 /* OnlineShopTests.swift */,
 				46C3159F244F729600AD5365 /* Info.plist */,
+				46C315BC24509B4900AD5365 /* AddToCartViewModelTest.swift */,
 			);
 			path = OnlineShopTests;
 			sourceTree = "<group>";
@@ -124,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				46C315AA245055AB00AD5365 /* Model */,
+				46C315B724509AF400AD5365 /* ViewModel */,
 			);
 			path = AddToCart;
 			sourceTree = "<group>";
@@ -136,6 +141,15 @@
 				46C315B12450748900AD5365 /* StateModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		46C315B724509AF400AD5365 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				46C315B824509B1100AD5365 /* AddToCartViewModel.swift */,
+				46C315BE24509D7300AD5365 /* TaxCalculator.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,10 +253,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C315B924509B1100AD5365 /* AddToCartViewModel.swift in Sources */,
 				46C315AE2450704900AD5365 /* ProductType.swift in Sources */,
 				46C315B22450748900AD5365 /* StateModel.swift in Sources */,
 				46C3158B244F729100AD5365 /* ViewController.swift in Sources */,
 				46C31587244F729100AD5365 /* AppDelegate.swift in Sources */,
+				46C315BF24509D7300AD5365 /* TaxCalculator.swift in Sources */,
 				46C315AC245055C300AD5365 /* ProductInput.swift in Sources */,
 				46C31589244F729100AD5365 /* SceneDelegate.swift in Sources */,
 			);
@@ -253,8 +269,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				46C315B02450728800AD5365 /* ProductInputTest.swift in Sources */,
+				46C315BD24509B4900AD5365 /* AddToCartViewModelTest.swift in Sources */,
 				46C315B4245075FE00AD5365 /* StateModelTest.swift in Sources */,
-				46C3159E244F729600AD5365 /* OnlineShopTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

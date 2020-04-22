@@ -17,6 +17,14 @@ struct ProductInput {
     let productPrice: Double?
     let state: String?
     
+    var totalPrice: Double? {
+        guard let price = productPrice,
+            let count = productCount else {
+                return 0
+        }
+        return price * Double(count)
+    }
+    
     
     //MARK: Public functions
     
