@@ -22,6 +22,8 @@
 		46C315BD24509B4900AD5365 /* AddToCartViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C315BC24509B4900AD5365 /* AddToCartViewModelTest.swift */; };
 		46C315BF24509D7300AD5365 /* TaxCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C315BE24509D7300AD5365 /* TaxCalculator.swift */; };
 		46C315C12450A15500AD5365 /* DiscountCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C315C02450A15500AD5365 /* DiscountCalculator.swift */; };
+		46C315C52450A72800AD5365 /* Double+EmptyCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C315C42450A72800AD5365 /* Double+EmptyCheck.swift */; };
+		46C315C72450A73B00AD5365 /* Int+EmptyCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C315C62450A73B00AD5365 /* Int+EmptyCheck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		46C315BC24509B4900AD5365 /* AddToCartViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartViewModelTest.swift; sourceTree = "<group>"; };
 		46C315BE24509D7300AD5365 /* TaxCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxCalculator.swift; sourceTree = "<group>"; };
 		46C315C02450A15500AD5365 /* DiscountCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountCalculator.swift; sourceTree = "<group>"; };
+		46C315C42450A72800AD5365 /* Double+EmptyCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+EmptyCheck.swift"; sourceTree = "<group>"; };
+		46C315C62450A73B00AD5365 /* Int+EmptyCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+EmptyCheck.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				46C315A82450559500AD5365 /* Modules */,
+				46C315C22450A6FE00AD5365 /* Utilities */,
 				46C31586244F729100AD5365 /* AppDelegate.swift */,
 				46C31588244F729100AD5365 /* SceneDelegate.swift */,
 				46C3158A244F729100AD5365 /* ViewController.swift */,
@@ -153,6 +158,23 @@
 				46C315C02450A15500AD5365 /* DiscountCalculator.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		46C315C22450A6FE00AD5365 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				46C315C32450A70900AD5365 /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		46C315C32450A70900AD5365 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				46C315C42450A72800AD5365 /* Double+EmptyCheck.swift */,
+				46C315C62450A73B00AD5365 /* Int+EmptyCheck.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +279,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				46C315C12450A15500AD5365 /* DiscountCalculator.swift in Sources */,
+				46C315C52450A72800AD5365 /* Double+EmptyCheck.swift in Sources */,
 				46C315B924509B1100AD5365 /* AddToCartViewModel.swift in Sources */,
+				46C315C72450A73B00AD5365 /* Int+EmptyCheck.swift in Sources */,
 				46C315AE2450704900AD5365 /* ProductType.swift in Sources */,
 				46C315B22450748900AD5365 /* StateModel.swift in Sources */,
 				46C3158B244F729100AD5365 /* ViewController.swift in Sources */,

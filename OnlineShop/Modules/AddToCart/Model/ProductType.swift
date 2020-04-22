@@ -13,6 +13,7 @@ enum ProductType: String {
     case mobile
     case tablet
     
+    
     //MARK: Initialisers
     
     init?(label: String?) {

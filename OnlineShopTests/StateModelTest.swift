@@ -10,7 +10,7 @@ import XCTest
 @testable import OnlineShop
 
 class StateModelTest: XCTestCase {
-
+    
     func testIfStateTaxRatepresent() {
         let availableStates = State.allCases
         
@@ -18,5 +18,5 @@ class StateModelTest: XCTestCase {
             XCTAssertNotNil($0.taxRate, "Tax rate not available for \($0.rawValue)")
         }
     }
-
+    
 }

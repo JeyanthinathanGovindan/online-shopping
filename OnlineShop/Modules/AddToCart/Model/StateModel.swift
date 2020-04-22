@@ -15,6 +15,7 @@ enum State: String, CaseIterable {
     case al
     case ca
     
+    
     //MARK: Properties
     
     var taxRate: Double? {
@@ -31,6 +32,7 @@ enum State: String, CaseIterable {
             return 8.25
         }
     }
+    
     
     //MARK: Initialisers
     

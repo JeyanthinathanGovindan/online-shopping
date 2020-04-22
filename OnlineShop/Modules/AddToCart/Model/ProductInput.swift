@@ -37,19 +37,19 @@ struct ProductInput {
     }
     
     func isValidCount() -> Bool {
-        guard let countValue = productCount else {
+        guard let count = productCount else {
             return false
         }
         
-        return !(countValue == 0)
+        return count.isValid()
     }
     
     func isValidPrice() -> Bool {
-        guard let priceValue = productPrice else {
+        guard let price = productPrice else {
             return false
         }
         
-        return !(priceValue == 0.0)
+        return price.isValid()
     }
     
     func isValidState() -> Bool {
