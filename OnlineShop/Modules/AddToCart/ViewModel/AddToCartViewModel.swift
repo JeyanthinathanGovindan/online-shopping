@@ -12,13 +12,13 @@ struct AddToCartViewModel {
     
     //MARK: Properties
     
-    let input: ProductInput
+    let input: ProductInput?
     
     
     //MARK: Public functions
     
     func calculateFinalPrice() -> Double? {
-        guard let totalPrice = input.totalPrice,
+        guard let totalPrice = input?.totalPrice,
             let tax = calculateTaxAmount(),
             let discount = calculateDiscountAmount() else {
                 return nil
@@ -30,8 +30,8 @@ struct AddToCartViewModel {
 extension AddToCartViewModel: TaxCalculator {
     
     func calculateTaxAmount() -> Double? {
-        guard let totalPrice = input.totalPrice,
-            let state = State(stateInput: input.state),
+        guard let totalPrice = input?.totalPrice,
+            let state = State(stateInput: input?.state),
             let taxRate = state.taxRate else {
                 return nil
         }
@@ -44,7 +44,7 @@ extension AddToCartViewModel: TaxCalculator {
 extension AddToCartViewModel: DiscountCalculator {
     
     func calculateDiscountAmount() -> Double? {
-        guard let totalPrice = input.totalPrice else {
+        guard let totalPrice = input?.totalPrice else {
             return nil
         }
         var percentage = 0.0
